@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><a href="index.html">Página index</a></p>
+    <table border="3">
+        <caption>Productos de la tienda</caption>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descuento</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Colgate</td>
+                    <td>10</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Papel Higiénico</td>
+                    <td>5</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Champú</td>
+                    <td>15</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th>30</th>
+                    <th>180</th>
+                </tr>
+            </tfoot>
+    </table>
+    table>(caption>{Productos de la tienda}>(thead>tr>th*3)>(tbody>(tr>td*3)*3)>(tfoot>tr>th*3))
+    table>(caption>{Factura detallada}>(thead>tr>th*1{Entel S.A. -Maarzo 2019})>(tbody>tr{Detalle de Cuotas}>(tr>th*3)*1>(tr>td*3))>(tfoot>tr>td>em{Entel le informa}))
+
+</body>
+</html>

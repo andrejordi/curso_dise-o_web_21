@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table>(caption>{Factura detallada}>(thead>tr>th*1{Entel S.A. -Maarzo 2019})>(tbody>tr{Detalle de Cuotas}>(tr>th*3)*1>(tr>td*3))>(tfoot>tr>td>em{Entel le informa})) -->
+    <h1 style="color: blue;font-style: oblique;">Entel S.A.</h1>
+    <table border="1">
+        <caption>Factura detallada</caption>
+        <thead>
+            <tr>
+                <th colspan="5">Entel S.A. -Maarzo 2019</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="5">Detalle de Cuotas</th>
+            </tr>
+            <tr>
+                <th scope="col">PERIODO</th>
+                <th scope="col">CONCEPTO</th>
+                <th scope="col">IMPORTE</th>
+                <th scope="col" colspan="2">DESCUENTO</th>
+            </tr>
+            <tr>
+                <td rowspan="3" style="text-align: center;">01/03/19 - 01-04-19</td>
+                <td>Servicio de identificación de llamadas</td>
+                <td style="text-align: center;">S/. 120</td>
+                <td colspan="2" style="text-align: center;">0</td>
+            </tr>
+            <tr>
+                <td>Línea individual</td>
+                <td style="text-align: center;">S/. 140</td>
+                <td colspan="2" style="text-align: center;">0</td>
+            </tr>
+            <tr>
+                <td>Bono ciudad</td>
+                <td style="text-align: center;">S/. 100.0</td>
+                <td colspan="2" style="text-align: center;">0</td>
+            </tr>
+            <tr>
+                <td colspan="2">TOTAL:</td>
+                <td colspan="3" style="text-align: right;"><b>S/. 360.00</b></td>
+            </tr>
+            <tr>
+                <th colspan="5">Detalle Consumos</th>
+            </tr>
+            <tr>
+                <th>CONCEPTO</th>
+                <th>LLAMADAS</th>
+                <th>DURACIÓN</th>
+                <th>IMPORTE</th>
+                <th>DESCUENTO</th>
+            </tr>
+            <tr>
+                <td>Llamada internacional</td>
+                <td style="text-align: center;">23</td>
+                <td style="text-align: center;">10m 23s</td>
+                <td style="text-align: center;">S/ 130.00</td>
+                <td style="text-align: center;">0</td>
+            </tr>
+            <!-- tr>td+td[style="text-align: center;"]*4 -->
+            <tr>
+                <td>Llamada metropolitana</td>
+                <td style="text-align: center;">23</td>
+                <td style="text-align: center;">10m 23s</td>
+                <td style="text-align: center;">S/ 35.00</td>
+                <td style="text-align: center;">0</td>
+            </tr>
+            <tr>
+                <td colspan="2">TOTAL:</td>
+                <td colspan="3" style="text-align: right;"><b>S/. 165.00</b></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="font-size: 13px;"><em>Entel le informa que puede llamar al número gratuito 081-808080
+                    para cualquier duda o sugerencia que tenga acerca de esta factura o de nuestro servicios.
+                </em></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+</body>
+</html>
