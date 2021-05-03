@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Cinematográfica</title>
+</head>
+<body>
+    <h2>Parte 1</h2>
+    <h3 style="color: blue">ENCUESTRA DE CINE: NOMINADAS AL OSCAR 2021</h3>
+    <form action="a.php" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" pattern="^[0-9]{8}" name="dni"><br>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" pattern="^[1-9][0-9]?$" name="edad"><br>
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Mejor Película</legend>
+            <input type="radio" name="peli" value="p1">Película 01<br>
+            <input type="radio" name="peli" value="p2">Película 02<br>
+            <input type="radio" name="peli" value="p3">Película 03<br>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona las películas que no has visto</legend>
+            <input type="checkbox" name="peli_no" value="pp1">Película 01</input><br>
+            <input type="checkbox" name="peli_no" value="pp2">Película 02</input><br>
+            <input type="checkbox" name="peli_no" value="pp3">Película 03</input><br>
+            <input type="checkbox" name="peli_no" value="pp4">Película 04</input><br>
+            <input type="checkbox" name="peli_no" value="pp5">Película 05</input><br>
+        </fieldset>
+        <fieldset>
+            <legend>Argumento de la película que más te gusta</legend>
+            <textarea name="reseña" id="reseña" cols="50" rows="5"></textarea>
+        </fieldset>
+        <footer style="text-align: center; padding: 10px;">
+            <input type="reset" value="Borrar Formulario">
+            <input type="submit" value="Enviar">
+        </footer>
+    </form>
+    <hr>
+    <h2>Parte 2</h2>
+    <form action="POST" >
+        <fieldset style="text-align: center;">
+            <p style="font-size:xx-large;font-weight: bold;">Nuevo Usuario</p>
+            <div>
+                <button onclick="location.href='https\://accounts.google.com/login?'" type="button">Registro con Google</button>  <button onclick="location.href='https\://facebook.com/login?'" type="button">Registro con Facebook</button>
+            </div>
+            <p>O registrarse con</p>
+            <div>
+                <input type="text" placeholder="Nombres" size="22"> <input type="text" placeholder="Apellidos" size="22"><br><br>
+                <input type="text" placeholder="micorreo@dominio" size="50"><br><br>
+                <input type="text" placeholder="su contraseña" size="50"><br><br>
+            </div>
+            <input type="checkbox" id="tandc" name="tandc" required>
+            <label for="tandc">Al crear esta cuenta, aceptas nuestros&nbsp;<a href="https://www.facebook.com/legal/terms">terminos y condiciones.</a></label>
+            <br><br><input type="submit" value="Enviar">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
