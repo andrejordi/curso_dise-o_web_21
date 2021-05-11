@@ -1,0 +1,12 @@
+/*.externo{
+    color: green;
+}*/
+a[class="externo"]{
+    color: green !important;
+}
+#pru{
+    color:yellow;
+}
+a[class="externo"]{
+    color: brown;
+}

@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+    color: white;
+}
+#title{
+    text-align: center;
+    color: rgb(25, 0, 255);
+}
